@@ -1,6 +1,6 @@
-# LibreLog: Accurate and Efficient Unsupervised Log Parsing Using Open-Source Large Language Models
+# Benchmarking Open-Source Large Language Models for Log Level Suggestion
 
-This repo is the package for "Benchmarking Open-Source Large Language Models For Log Level Suggestion".
+This repo is the package for "Benchmarking Open-Source Large Language Models for Log Level Suggestion".
 
 ## Study Design
 
@@ -14,6 +14,17 @@ We present the repository structure below.
 ```
 .
 ├── README.md
+├── data
+│   ├── data-HBase.json.zip
+│   ├── data-JMeter.json.zip
+│   ├── data-Zookeeper.json.zip
+│   ├── data-cassandra.json.zip
+│   ├── data-elasticsearch.json.zip
+│   ├── data-flink.json.zip
+│   ├── data-kafka.json.zip
+│   ├── data-karaf.json.zip
+│   ├── data-wicket.json.zip
+│   └── README.md
 ├── docs
 │   └── overview_diagram.pdf
 ├── evaluation
@@ -21,26 +32,25 @@ We present the repository structure below.
 │   │   └── RQ1.png
 │   ├── RQ2
 │   │   └── RQ2.png
-│   ├── RQ3
-│   │   ├── RQ3.png
-├── full_dataset
-│   └── files_list.json
-│   └── README.md
+│   └── RQ3
+│       └── RQ3.png
 ├── models
 │   └── README.md
-├── parser
-│   ├── finetune.py
-│   ├── fillmask_prompt.py
-│   ├── textgen_prompt.py
-│   ├── process_results.py
-├── parsing.sh
+├── README.md
 ├── requirements.txt
-└── results
-    ├── 
-    ├── 
-    ├── 
-    ├── 
-    └── 
+├── RQ1_results.py
+├── RQ2_results.py
+├── RQ3_results.py
+├── calculations_util.py
+├── directory.txt
+├── fillmask_prompt.py
+├── fillmask_prompt_rq2.py
+├── fillmask_prompt_u.py
+├── fillmask_prompt_x.py
+├── generate_command.py
+├── prompter.py
+├── sampling.py
+└── textgen_prompt_rq2.py
 ```
 
 
